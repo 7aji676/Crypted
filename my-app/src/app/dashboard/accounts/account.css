@@ -1,0 +1,459 @@
+.account-page {
+  min-height: 100dvh;
+  background: #f5f5f2;
+  color: #181816;
+  padding: 34px 24px 60px;
+}
+
+.account-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.account-header {
+  margin-bottom: 38px;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #777771;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: color 150ms ease;
+}
+
+.back-button:hover {
+  color: #181816;
+}
+
+.back-button svg {
+  width: 17px;
+  height: 17px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Account title */
+
+.account-title {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-bottom: 30px;
+}
+
+.platform-large {
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 14px;
+
+  background: #181816;
+  color: #ffffff;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.account-label {
+  margin: 0 0 5px;
+
+  color: #8b8b84;
+
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
+.account-title h1 {
+  margin: 0;
+
+  font-size: 28px;
+  font-weight: 650;
+  letter-spacing: -0.04em;
+}
+
+.account-title > div:last-child > p:last-child {
+  margin: 5px 0 0;
+
+  color: #777771;
+  font-size: 13px;
+}
+
+/* Details */
+
+.details-card {
+  overflow: hidden;
+
+  background: #ffffff;
+  border: 1px solid #e7e7e2;
+  border-radius: 14px;
+}
+
+.details-header {
+  min-height: 78px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  padding: 20px 24px;
+
+  border-bottom: 1px solid #eeeeea;
+}
+
+.details-header h2 {
+  margin: 0;
+
+  font-size: 15px;
+  font-weight: 650;
+}
+
+.details-header p {
+  margin: 5px 0 0;
+
+  color: #888880;
+  font-size: 12px;
+}
+
+.edit-button {
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 0 12px;
+
+  border: 1px solid #deded8;
+  border-radius: 7px;
+
+  background: #ffffff;
+  color: #343430;
+
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 150ms ease,
+    border-color 150ms ease;
+}
+
+.edit-button:hover {
+  background: #f5f5f2;
+  border-color: #cecec7;
+}
+
+.edit-button svg {
+  width: 15px;
+  height: 15px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.details-body {
+  padding: 6px 24px;
+}
+
+.detail-field {
+  padding: 20px 0;
+
+  border-bottom: 1px solid #eeeeea;
+}
+
+.detail-field:last-child {
+  border-bottom: 0;
+}
+
+.detail-field > label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #888880;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.value-row {
+  min-height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  padding: 0 12px;
+
+  border: 1px solid #e5e5df;
+  border-radius: 7px;
+
+  background: #fafaf8;
+
+  color: #343430;
+
+  font-size: 13px;
+}
+
+.value-row > span {
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.value-actions {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+
+  flex-shrink: 0;
+}
+
+.copy-button {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  border-radius: 6px;
+
+  background: transparent;
+  color: #888880;
+
+  cursor: pointer;
+
+  transition:
+    background 150ms ease,
+    color 150ms ease;
+}
+
+.copy-button:hover {
+  background: #eeeeea;
+  color: #181816;
+}
+
+.copy-button svg {
+  width: 16px;
+  height: 16px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.password-row > span {
+  letter-spacing: 0.08em;
+}
+
+/* Metadata */
+
+.metadata-card {
+  margin-top: 14px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 19px 24px;
+
+  background: #ffffff;
+  border: 1px solid #e7e7e2;
+  border-radius: 14px;
+}
+
+.metadata-item {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.metadata-item span {
+  color: #999991;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.metadata-item strong {
+  color: #555550;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.metadata-divider {
+  width: 1px;
+  height: 34px;
+
+  margin: 0 25px;
+
+  background: #e8e8e2;
+}
+
+/* Danger */
+
+.danger-zone {
+  margin-top: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+
+  padding: 20px 22px;
+
+  border: 1px solid #e2d9d5;
+  border-radius: 12px;
+
+  background: #fffdfc;
+}
+
+.danger-zone h2 {
+  margin: 0;
+
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.danger-zone p {
+  margin: 5px 0 0;
+
+  color: #888880;
+  font-size: 11px;
+}
+
+.delete-button {
+  height: 36px;
+
+  flex-shrink: 0;
+
+  padding: 0 13px;
+
+  border: 1px solid #d9cbc6;
+  border-radius: 7px;
+
+  background: #ffffff;
+  color: #9a5144;
+
+  font: inherit;
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 150ms ease,
+    border-color 150ms ease;
+}
+
+.delete-button:hover {
+  background: #fff5f2;
+  border-color: #cdb9b3;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .account-page {
+    padding: 22px 14px 45px;
+  }
+
+  .account-header {
+    margin-bottom: 30px;
+  }
+
+  .account-title {
+    gap: 13px;
+    margin-bottom: 24px;
+  }
+
+  .platform-large {
+    width: 52px;
+    height: 52px;
+
+    border-radius: 12px;
+
+    font-size: 19px;
+  }
+
+  .account-title h1 {
+    font-size: 24px;
+  }
+
+  .account-title > div:last-child > p:last-child {
+    max-width: 220px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .details-header {
+    align-items: flex-start;
+    padding: 18px;
+  }
+
+  .details-body {
+    padding: 4px 18px;
+  }
+
+  .edit-button {
+    flex-shrink: 0;
+  }
+
+  .metadata-card {
+    padding: 18px;
+  }
+
+  .metadata-divider {
+    margin: 0 15px;
+  }
+
+  .danger-zone {
+    align-items: flex-start;
+    flex-direction: column;
+
+    padding: 18px;
+  }
+
+  .delete-button {
+    width: 100%;
+  }
+}
